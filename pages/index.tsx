@@ -25,7 +25,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Hi. What would you like to learn about Amazon&apos;s annual reports?',
+        message: 'Hi. What would you like to learn about Nvidia&apos;s annual reports?',
         type: 'apiMessage',
       },
     ],
@@ -130,11 +130,11 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
         <h1 className={styles.slogan}>
-            <span className={styles.sloganAskEDGAR}>AskEDGAR</span> about Amazon&apos;s 10-K Filings
+            <span className={styles.sloganAskEDGAR}>AskEDGAR</span> about Nvidia&apos;s 10-K Filings
           </h1>
           <div className={styles.currentFileWrapper}>
            <div className={styles.currentFileText}>
-              Current Data Source:<span className={styles.currentFileName}> Amazon 10-Ks 2020-2022</span>
+              Current Data Source:<span className={styles.currentFileName}> Nvidia 10-Ks 2020-2022</span>
              </div>
            </div>
           <main className={styles.main}>
@@ -236,7 +236,7 @@ export default function Home() {
                     placeholder={
                       loading
                         ? 'Waiting for response...'
-                        : 'What is the summary of the report?'
+                        : 'Ask a question.'
                     }
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
